@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}|Bookstore{% endblock title%}</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="https://use.fontawesome.com/b20c5e7061.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col"><strong>FIRME SHOP</strong></div>
+        <div class="col"><i class="fa fa-search"></i> SEARCH</div>
+        <div class="col loginbanner">
+          LOG IN <i class="fa fa-shopping-bag"></i> <i class="fa fa-bars"></i>
+        </div>
+      </div>
+      {% block content %} {% endblock content %}
+    </div>
+  </body>
+</html>
