@@ -1,5 +1,9 @@
 {% extends '_base.html' %}
+{% load static %}
+
     {% block title %}Home{% endblock title %}
 {% block content %}
 <h1>Homepage</h1>
+<img src="{% static 'images/djangoforprofessionals.jpg'%}" alt="django for profesionals book cover" class="bookcover">
+
 {% endblock content %}
