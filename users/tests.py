@@ -6,7 +6,7 @@ from .forms import CustomUserCreationForm
 
 class SignupTests(TestCase):
     username = 'newuser'
-    email = 'newuser@email.com'
+    email = 'antonchitay@gmail.com'
 
     def setUp(self):
         url = reverse('account_signup')

@@ -13,6 +13,11 @@ services:
     environment:
       - SECRET_KEY=@lgmubqzn^9@u#gr15_ux4w-l8w9*8@wrv_!@hcgq#(qx1m$$2_
       - DEBUG=True
+      - EMAIL_USE_SSL=True
+      - EMAIL_HOST=mail.privateemail.com
+      - EMAIL_HOST_USER=no-reply@mercurywapps.com
+      - EMAIL_HOST_PASSWORD=Mercurio!3385
+      - EMAIL_PORT=465
 
   db:
     image: postgres:11

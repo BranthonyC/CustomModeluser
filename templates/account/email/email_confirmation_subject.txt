@@ -1,0 +1,4 @@
+{% load i18n %}
+{% autoescape off %}
+{% blocktrans %}Hello from my virutal Books Store{% endblocktrans %}
+{% endautoescape %}
