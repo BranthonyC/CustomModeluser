@@ -10,6 +10,9 @@ services:
       - 8000:8000
     depends_on:
       - db
+    environment:
+      - SECRET_KEY=@lgmubqzn^9@u#gr15_ux4w-l8w9*8@wrv_!@hcgq#(qx1m$$2_
+      - DEBUG=True
 
   db:
     image: postgres:11
