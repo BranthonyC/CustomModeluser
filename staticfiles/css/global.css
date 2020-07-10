@@ -12,3 +12,7 @@ h1 {
   padding: 1rem;
   background-color: red;
 }
+
+input {
+  background-color: white;
+}

@@ -1,0 +1,15 @@
+setup:
+  addons:
+    - plan: heroky-postgresql
+
+build:
+  docker:
+    web: Dockerfile
+
+release:
+  image: web
+  command:
+    - python manage.py collecstatic --noinput
+
+run:
+  web: gunicorn bookstore_project.wsgi
