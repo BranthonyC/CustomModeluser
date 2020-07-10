@@ -1,5 +1,4 @@
 body {
-  /* background-color: #dedede; */
   background-color: yellow;
 }
 
@@ -11,7 +10,8 @@ h1 {
   height: 300px;
   width: auto;
   padding: 1rem;
-  background-color: red;
+  background-color: blue;
+  font-size: 4rem;
 }
 
 input {
