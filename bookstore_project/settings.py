@@ -19,10 +19,10 @@ ENVIRONMENT = os.environ.get('ENVIRONMENT', default='production')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', default=1)
+DEBUG = os.environ.get('DEBUG', default=True)
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['shrouded-coast-69340.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['shrouded-coast-69340.herokuapp.com', 'localhost', '198.168.0.7']
 # Application definition
 
 INSTALLED_APPS = [
@@ -191,7 +191,6 @@ if ENVIRONMENT=='production':
     SECURE_CONTENT_TYPE_NOSNIFF = True
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
-    # SECURE_REFERRER_POLICY = ['same_origin']
     DEBUG = False
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
 
