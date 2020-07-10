@@ -22,7 +22,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', default=1)
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['shrouded-coast-69340.herokuapp.com', 'localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
@@ -193,6 +193,7 @@ if ENVIRONMENT=='production':
     CSRF_COOKIE_SECURE = True
     # SECURE_REFERRER_POLICY = ['same_origin']
     DEBUG = False
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
 
 # Heroku 
 import dj_database_url
