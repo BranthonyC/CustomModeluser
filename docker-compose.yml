@@ -22,6 +22,10 @@ services:
       - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_51H38QBGPv3wnfeyLdh0t029xspLZmD0FFrWL6zKVLkFVM6PoIwrk7xjDJ6cyciMxhUbEXz6XWwUtZsN6scKrqoMt00imsWLgsq
       - STRIPE_TEST_SECRET_KEY=sk_test_51H38QBGPv3wnfeyLh6dD3NIhpp526PNdxepoKrkxUNWCQi0dokxL5hYx5z6zO2cm9lBK2P9woXSVVd5zim6MJelT00LtOUDSRp
       - ENVIRONMENT=development
+      - USE_S3=True
+      - AWS_ACCESS_KEY_ID=AKIA5E2FEZPESDWKB5GL
+      - AWS_SECRET_ACCESS_KEY=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
+      - AWS_STORAGE_BUCKET_NAME=firmebucket
 
   db:
     image: postgres:11

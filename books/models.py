@@ -9,7 +9,7 @@ class Book(models.Model):
     author = models.CharField(max_length=200)
     price = models.DecimalField(max_digits=5, decimal_places=2)
     stock = models.IntegerField(default=0)
-    cover = models.ImageField(upload_to='covers/', blank=True)
+    cover = models.ImageField()
 
     def __str__(self):
         return "Book: {0} Author: {1}".format(self.title, self.author)

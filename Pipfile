@@ -16,6 +16,8 @@ django-debug-toolbar = "==2.0"
 whitenoise = "==5.0.1"
 gunicorn = "*"
 dj-database-url = "*"
+boto3 = "*"
+django-storages = "*"
 
 [requires]
 python_version = "3.8"
